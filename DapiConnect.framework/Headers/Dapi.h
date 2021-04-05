@@ -27,6 +27,10 @@ NS_SWIFT_NAME(DapiConnectDelegate)
 /// @param error The reason of the failure.
 - (void)connectDidFailConnectingToBankID:(NSString *)bankID withError:(NSString *)error;
 
+@optional
+
+- (void)connectDidDismiss;
+
 @end
 
 @interface Dapi : NSObject
