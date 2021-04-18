@@ -24,59 +24,30 @@ extern DPCEndPoint const DPCEndPointCreateTransfer;
 extern DPCEndPoint const DPCEndPointResumeJob;
 extern DPCEndPoint const DPCEndPointDelinkUser;
 
-typedef NSString *DPCColorScheme NS_TYPED_EXTENSIBLE_ENUM;
+typedef NSString *DPCEnvironment NS_TYPED_EXTENSIBLE_ENUM;
 
-extern DPCColorScheme const DPCColorSchemeGeneral;
-extern DPCColorScheme const DPCColorSchemeBW;
-extern DPCColorScheme const DPCColorSchemeNeon;
+extern DPCEnvironment const DPCEnvironmentProduction;
+extern DPCEnvironment const DPCEnvironmentSandbox;
 
 NS_SWIFT_NAME(DapiConfigurations)
 @interface DPCConfigurations : NSObject
 
 /*!
- @brief appKey The key obtained from Dapi dashboard
-*/
-@property (nonatomic, copy) NSString *appKey;
-
-/*!
- @brief The URL where your Dapi server is hosted.
- 
- @discussion Our mobile SDK doesn't communicate with Dapi servers directly. Instead, the calls go through your servers, this provides an extra security layer. We also provide a server-side SDK. For more info, please contact us.
-*/
-@property (nonnull, nonatomic, strong) NSURLComponents *baseUrl;
-
-/*!
  @brief Supported countries for banks shown in connect.
  
- @discussion We expect that you pass two-letter country codes (ISO 3166-1 alpha-2).
+ @discussion Country codes of supported countries. (ISO 3166-2 format).
 */
-@property (nonatomic, copy) NSArray<NSString *> *countries;
+@property (nonatomic, copy, readonly) NSArray<NSString *> *countries;
 
 /*!
- @discussion A unique identifier for the currently logged in user to your app.
- All fetched data will be associated with this property
+ @brief Environment of the banks (either production or sandbox).
 */
-@property (nonatomic, copy) NSString *clientUserID;
+@property (nonatomic, copy, readonly) DPCEnvironment environment;
 
 /*!
  @brief Let's you set a custom end point. This only needed when not using the server-side SDK.
 */
 @property (nonatomic, copy) NSDictionary<DPCEndPoint, NSString *> *endpoints;
-
-@property (nonatomic, nonatomic, copy) DPCColorScheme colorScheme;
-
-/*!
- @brief Whether include banks that marked as experimental in the banks list of connect.
- @discussion A bank is marked as experimental when the bank changes their MFA (Multi-factor authentication) but the SDK is not upgraded to handle the new MFA.
-*/
-@property (nonatomic, assign) BOOL isExperimental;
-
-/*!
- @brief Allow DapiConnect to auto truncate some string properties before being sent to the bank
- @discussion Some bank require strings to have a max length. This property is true by default. Otherwise, error will be thrown.
- Objects used in payment.createBeneficiary, payment.createTransfer, etc.
-*/
-@property (nonatomic, assign, getter=isAutoTruncate) BOOL autoTruncate;
 
 @property (nonatomic, copy) NSDictionary<DPCEndPoint, NSArray<NSURLQueryItem *> *> *endPointExtraQueryItems;
 @property (nonatomic, copy) NSDictionary<DPCEndPoint, NSDictionary<NSString *, NSString *> *> *endPointExtraHeaderFields;
@@ -88,10 +59,8 @@ NS_SWIFT_NAME(DapiConfigurations)
 */
 @property (nonatomic, copy) NSDictionary<DPCEndPoint, NSDictionary<NSString *, id> *> *endPointExtraBody;
 
-- (instancetype)initWithAppKey:(NSString *)appKey baseUrl:(NSURLComponents *)baseUrl countries:(NSArray<NSString *> *)countries clientUserID:(NSString *)clientUserID;
-- (instancetype)init __attribute__((unavailable("use [DPCConfigurations initWithAppKey:baseUrl:countries:clientUserID:]")));
-
-- (BOOL)isEqualToConfigurations:(DPCConfigurations *)other;
+- (instancetype)initWithCountries:(NSArray<NSString *> *_Nullable)countries environment:(DPCEnvironment _Nullable)environment;
+- (instancetype)init __attribute__((unavailable("use [DPCConfigurations initWithCountries:environment:];")));
 
 @end
 

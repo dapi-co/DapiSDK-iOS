@@ -49,6 +49,14 @@ NS_SWIFT_NAME(DapiConnectDelegate)
 /// @discussion This method is async. The completion handler will run on the main thread. Make sure to never use any SDK functionality unless the completion block is called. Once initialized, you can call Dapi.shared to get the shared singleton object.
 + (void)startWithAppKey:(NSString *)appKey clientUserID:(NSString *)clientUserID completion:(void (^ __nullable)(Dapi *__nullable dapi, NSError *__nullable error))completion NS_SWIFT_NAME(start(appKey:clientUserID:completion:));
 
+/// An async method to prepares, load initial memory and run Dapi SDK.
+/// @param appKey App Key is obtained from https://dashboard.dapi.co
+/// @param clientUserID An identifier for your currently logged in user. This is used to associate bank accounts to your user.
+/// @param configuration Client-side configurations of the SDK..
+/// @param completion Since the initialization is async, the completion parameter is to notify once the initialization is successful or failure.
+/// @discussion This method is async. The completion handler will run on the main thread. Make sure to never use any SDK functionality unless the completion block is called. Once initialized, you can call Dapi.shared to get the shared singleton object.
++ (void)startWithAppKey:(NSString *)appKey clientUserID:(NSString *)clientUserID configuration:(DPCConfigurations * __nullable)configuration completion:(void (^ __nullable)(Dapi *__nullable dapi, NSError *__nullable error))completion NS_SWIFT_NAME(start(appKey:clientUserID:configuration:completion:));
+
 - (instancetype)init __attribute__((unavailable("use Dapi.start(appKey:clientUserID:completion:)")));
 
 
