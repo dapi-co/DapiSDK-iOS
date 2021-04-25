@@ -12,6 +12,7 @@
 #import "DPCBankMetadata.h"
 #import "DPCTransaction.h"
 #import "DPCResult.h"
+#import "DPCBankBeneficiary.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -40,6 +41,11 @@ typedef void (^TransferBlock)(DPCAccount *__nullable account, NSUInteger amount,
                          fromDate:(NSDate *)fromDate
                            toDate:(NSDate *)toDate
                        completion:(void (^ __nullable)(NSArray<DPCTransaction *> *__nullable transactions, NSError *__nullable error, NSString*__nullable operationID))completion;
+
+- (void)getBeneficiaries:(void (^ __nullable)(NSArray<DPCBankBeneficiary *> *__nullable beneficiaries, NSError *__nullable error, NSString *__nullable operationID))completion;
+
+- (void)createBeneficiary:(DPCBeneficiary *)beneficiaryDetails
+                       completion:(void (^ __nullable)(DPCResult *__nullable result, NSError *__nullable error, NSString *__nullable operationID))completion;
 
 - (void)createTransfer:(void (^ __nullable)(DPCAccount *account, NSUInteger amount, NSError *__nullable error, NSString *__nullable operationID))completion;
 

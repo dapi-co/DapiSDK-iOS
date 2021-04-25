@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		Pe371OV9EVuxvuVZSSeEhnR4m5Q=
+		b+SWMuGTV+t+UEwYNKlM9fMw7+Y=
 		</data>
 		<key>DapiConnect.momd/DapiConnect.mom</key>
 		<data>
@@ -402,9 +402,13 @@
 		<data>
 		4AoKmRCPXdQhmuwySJKfMS1OtVQ=
 		</data>
+		<key>Headers/DPCBankBeneficiary.h</key>
+		<data>
+		29gQE3kEwFj7QtRhQj4xt+GSei8=
+		</data>
 		<key>Headers/DPCBankConnection.h</key>
 		<data>
-		hzGe6Vvhnq1HXJrndVjBpHZgBo0=
+		TEDoGaiO82Alnibtd5m61ob8hko=
 		</data>
 		<key>Headers/DPCBankMetadata.h</key>
 		<data>
@@ -412,7 +416,7 @@
 		</data>
 		<key>Headers/DPCBeneficiary.h</key>
 		<data>
-		AIHD4qV5zM3kyehKwgkCvY512Vs=
+		0VI+M5UYwZX1iFxnpscKr5sXxkM=
 		</data>
 		<key>Headers/DPCConfigurations.h</key>
 		<data>
@@ -460,15 +464,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Ty7OfldVpUcTPjfyq8g86aeEtVA=
+		ZOtFqv5/TS/88Ts6Uqc+oCJFLRs=
 		</data>
 		<key>MFAOnboardingViewController.nib/objects-11.0+.nib</key>
 		<data>
-		/ck3WoTXZ4LS6xo4d1VxDsmh8l0=
+		pdLTN/b1Q21FILEIMQqAjs3Cbwo=
 		</data>
 		<key>MFAOnboardingViewController.nib/runtime.nib</key>
 		<data>
-		IRE8cgu4AeYbp0UF4NzIvaQla/g=
+		YKgSoW0ejl3Dh/mrTbyQQZ6i1wU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -553,11 +557,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Pe371OV9EVuxvuVZSSeEhnR4m5Q=
+			b+SWMuGTV+t+UEwYNKlM9fMw7+Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			Z0PpzsaE8mojFgYpZNHFQjTOoxlqt38pgdONrTD1Fnw=
+			7a+ghBmdhfS/Vt0Sm+dX8e9sRtWrsGiEz06djrcoqX0=
 			</data>
 		</dict>
 		<key>DapiConnect.momd/DapiConnect.mom</key>
@@ -1150,15 +1154,26 @@
 			2nTV3+GE551OSRbX8oWb39A1GlcYiDZPjYRFcQhCk2A=
 			</data>
 		</dict>
+		<key>Headers/DPCBankBeneficiary.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			29gQE3kEwFj7QtRhQj4xt+GSei8=
+			</data>
+			<key>hash2</key>
+			<data>
+			Wj8Z5HJIRLuxcsbqPVS5Eo8T8SDWn2YR+dD0dg/IbMw=
+			</data>
+		</dict>
 		<key>Headers/DPCBankConnection.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hzGe6Vvhnq1HXJrndVjBpHZgBo0=
+			TEDoGaiO82Alnibtd5m61ob8hko=
 			</data>
 			<key>hash2</key>
 			<data>
-			UIOqeN8Fw6OEPoC6THK4T3F7YjsG8yxbr9qpPpnBD+4=
+			nlKorBtp2hzquY2Gwm24Caa61vx7laDmbBwMG46hDhE=
 			</data>
 		</dict>
 		<key>Headers/DPCBankMetadata.h</key>
@@ -1176,11 +1191,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AIHD4qV5zM3kyehKwgkCvY512Vs=
+			0VI+M5UYwZX1iFxnpscKr5sXxkM=
 			</data>
 			<key>hash2</key>
 			<data>
-			EktDQz3POQFhk/21avyh3XLLjVQHdqtctgavWEze4ig=
+			TfrxFyeur4k6s+WuFmlJAFsXG8yCqzJOBs3KUTBiCu0=
 			</data>
 		</dict>
 		<key>Headers/DPCConfigurations.h</key>
@@ -1308,22 +1323,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/ck3WoTXZ4LS6xo4d1VxDsmh8l0=
+			pdLTN/b1Q21FILEIMQqAjs3Cbwo=
 			</data>
 			<key>hash2</key>
 			<data>
-			qUqbPKrjvo9W98qYsMb1ZT/JzjlPOUiq2FZ2ik3wBps=
+			HomuW5Wis/FeUtA0BHdoRacTVmNvEgWJwVS/S8M+f4Y=
 			</data>
 		</dict>
 		<key>MFAOnboardingViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IRE8cgu4AeYbp0UF4NzIvaQla/g=
+			YKgSoW0ejl3Dh/mrTbyQQZ6i1wU=
 			</data>
 			<key>hash2</key>
 			<data>
-			tnwAgGSpReaKp308US+ikjvoPu0KTocENfL122B1lR4=
+			6u0ZSh6btKTW/LWjioJo19RHGiBQzvDLIvJ6C0gbhs0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

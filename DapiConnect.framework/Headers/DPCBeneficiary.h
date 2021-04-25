@@ -11,6 +11,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef NSString *DPCBeneficiaryType NS_TYPED_EXTENSIBLE_ENUM;
+
+extern DPCBeneficiaryType const DPCBeneficiaryTypeSame;
+extern DPCBeneficiaryType const DPCBeneficiaryTypeLocal;
+extern DPCBeneficiaryType const DPCBeneficiaryTypeInternational;
+
 NS_SWIFT_NAME(DapiBeneficiary)
 @interface DPCBeneficiary : NSObject
 
@@ -24,6 +30,7 @@ NS_SWIFT_NAME(DapiBeneficiary)
 @property (nonatomic, copy, nullable) NSString *country;
 @property (nonatomic, copy, nullable) NSString *branchAddress;
 @property (nonatomic, copy, nullable) NSString *branchName;
+@property (nonatomic, copy, nullable) DPCBeneficiaryType type;
 
 - (NSDictionary<NSString *, id> *)dictionaryRepresentation;
 
