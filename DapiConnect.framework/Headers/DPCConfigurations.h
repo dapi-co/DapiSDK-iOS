@@ -21,6 +21,7 @@ extern DPCEndPoint const DPCEndPointGetTransactions;
 extern DPCEndPoint const DPCEndPointGetBeneficiaries;
 extern DPCEndPoint const DPCEndPointCreateBeneficiary;
 extern DPCEndPoint const DPCEndPointCreateTransfer;
+extern DPCEndPoint const DPCEndPointCreateTransferToExistingBeneficiary;
 extern DPCEndPoint const DPCEndPointResumeJob;
 extern DPCEndPoint const DPCEndPointDelinkUser;
 

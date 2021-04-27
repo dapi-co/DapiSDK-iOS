@@ -47,6 +47,8 @@ typedef void (^TransferBlock)(DPCAccount *__nullable account, NSUInteger amount,
 - (void)createBeneficiary:(DPCBeneficiary *)beneficiaryDetails
                        completion:(void (^ __nullable)(DPCResult *__nullable result, NSError *__nullable error, NSString *__nullable operationID))completion;
 
+- (void)createTransferToExistingBeneficiaryFromAccount:(DPCAccount *)account beneficiaryID:(NSString *)beneficiaryID amount:(NSUInteger)amount remark:(NSString *__nullable)remark completion:(TransferBlock)completion;
+
 - (void)createTransfer:(void (^ __nullable)(DPCAccount *account, NSUInteger amount, NSError *__nullable error, NSString *__nullable operationID))completion;
 
 
