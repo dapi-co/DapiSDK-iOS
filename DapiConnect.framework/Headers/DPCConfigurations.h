@@ -60,6 +60,28 @@ NS_SWIFT_NAME(DapiConfigurations)
 */
 @property (nonatomic, copy) NSDictionary<DPCEndPoint, NSDictionary<NSString *, id> *> *endPointExtraBody;
 
+/*!
+ @brief Controls whether bank account connect UI shows the bank logos.
+ 
+ @discussion The value is true by default.
+*/
+@property (nonatomic, assign) BOOL showLogos;
+
+
+/*!
+ @brief Controls whether bank account connect UI shows a close button.
+ 
+ @discussion The value is true by default.
+*/
+@property (nonatomic, assign) BOOL showCloseButton;
+
+/*!
+ @brief Controls whether account selection UI shows a add account button.
+ 
+ @discussion The value is true by default.
+*/
+@property (nonatomic, assign) BOOL showAddAccountButton;
+
 - (instancetype)initWithCountries:(NSArray<NSString *> *_Nullable)countries environment:(DPCEnvironment _Nullable)environment;
 - (instancetype)init __attribute__((unavailable("use [DPCConfigurations initWithCountries:environment:];")));
 

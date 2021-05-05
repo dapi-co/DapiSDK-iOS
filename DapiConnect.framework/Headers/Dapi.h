@@ -28,6 +28,14 @@ NS_SWIFT_NAME(DapiConnectDelegate)
 - (void)connectDidFailConnectingToBankID:(NSString *)bankID withError:(NSString *)error;
 
 @optional
+/// Called when a user request a bank through connect.
+/// @param bankName The name of the bank requested.
+/// @param iban User's IBAN in the bank.
+- (void)connectDidRequestBank:(NSString *)bankName iban:(NSString *)iban;
+
+
+
+@optional
 
 - (void)connectDidDismiss;
 

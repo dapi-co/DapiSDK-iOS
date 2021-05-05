@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(DapiBankConnection)
 @interface DPCBankConnection : NSObject
 
-typedef void (^TransferBlock)(DPCAccount *__nullable account, NSUInteger amount, NSError *__nullable error, NSString *__nullable operationID);
+typedef void (^TransferBlock)(DPCAccount *__nullable account, double amount, NSError *__nullable error, NSString *__nullable operationID);
 
 @property (nonnull, nonatomic, copy, readonly) NSString *userID;
 @property (nonnull, nonatomic, copy, readonly) NSString *clientUserID;
@@ -47,9 +47,9 @@ typedef void (^TransferBlock)(DPCAccount *__nullable account, NSUInteger amount,
 - (void)createBeneficiary:(DPCBeneficiary *)beneficiaryDetails
                        completion:(void (^ __nullable)(DPCResult *__nullable result, NSError *__nullable error, NSString *__nullable operationID))completion;
 
-- (void)createTransferToExistingBeneficiaryFromAccount:(DPCAccount *)account beneficiaryID:(NSString *)beneficiaryID amount:(NSUInteger)amount remark:(NSString *__nullable)remark completion:(TransferBlock)completion;
+- (void)createTransferToExistingBeneficiaryFromAccount:(DPCAccount *)account beneficiaryID:(NSString *)beneficiaryID amount:(double)amount remark:(NSString *__nullable)remark completion:(TransferBlock)completion;
 
-- (void)createTransfer:(void (^ __nullable)(DPCAccount *account, NSUInteger amount, NSError *__nullable error, NSString *__nullable operationID))completion;
+- (void)createTransfer:(void (^ __nullable)(DPCAccount *account, double amount, NSError *__nullable error, NSString *__nullable operationID))completion;
 
 
 - (void)createTransferFromAccount:(DPCAccount *__nullable)account
@@ -63,17 +63,17 @@ typedef void (^TransferBlock)(DPCAccount *__nullable account, NSUInteger amount,
                        completion:(TransferBlock)completion;
 
 - (void)createTransferFromAccount:(DPCAccount *__nullable)account
-                           amount:(NSUInteger)amount
+                           amount:(double)amount
                        completion:(TransferBlock)completion;
 
 - (void)createTransferFromAccount:(DPCAccount *__nullable)account
                     toBeneficiary:(DPCBeneficiary *__nullable)beneficiary
-                           amount:(NSUInteger)amount
+                           amount:(double)amount
                        completion:(TransferBlock)completion;
 
 - (void)createTransferFromAccount:(DPCAccount *__nullable)account
                     toBeneficiary:(DPCBeneficiary *__nullable)beneficiary
-                           amount:(NSUInteger)amount
+                           amount:(double)amount
                            remark:(NSString *__nullable)remark
                        completion:(TransferBlock)completion;
 
