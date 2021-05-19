@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
     s.name              = 'DapiSDK'
     s.version           = '2.7.0'
     s.summary           = 'Financial APIs to connect users bank accounts.'
-    s.homepage          = 'https://dapi.co/'
+    s.homepage          = 'https://dapi.com'
     s.author            = { 'Dapi' => 'hello@dapi.co' }
     s.license           = { :type => 'Commercial', :file => 'LICENSE.md' }
     s.platform          = "ios", '10.3'
