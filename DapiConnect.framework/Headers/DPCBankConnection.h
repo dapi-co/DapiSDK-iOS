@@ -34,6 +34,10 @@ typedef void (^TransferBlock)(DPCAccount *__nullable account, double amount, NSE
 
 + (NSArray<DPCBankConnection *> *)getConnectionsWithClientUserID:(NSString *)clientUserID;
 
++ (void)create:(NSDictionary<NSString *, id> *)connectionParameters completion:(void (^ __nullable)(DPCBankConnection *__nullable connection, NSError *__nullable error))completion;
+
+- (NSDictionary<NSString *, id> *)getConnectionParameters;
+
 - (void)getAccountMetadata:(void (^ __nullable)(DPCBankMetadata *__nullable accounts, NSError *__nullable error, NSString *__nullable operationID))completion;
 
 - (void)getIdentity:(void (^ __nullable)(DPCIdentity *__nullable identity, NSError *__nullable error, NSString *__nullable operationID))completion;
