@@ -31,6 +31,7 @@ typedef void (^TransferBlock)(DPCAccount *__nullable account, double amount, NSE
 @property (nonnull, nonatomic, copy, readonly) NSString *halfLogo;
 @property (nonnull, nonatomic, copy, readonly) NSString *miniLogo;
 @property (nonatomic, copy, readonly) NSArray<DPCAccount *> *accounts;
+@property (nonatomic, copy, readonly) NSArray<DPCCard *> *cards;
 @property (nonatomic, strong, readonly) NSDate *createdAt;
 
 + (NSArray<DPCBankConnection *> *)getConnectionsWithClientUserID:(NSString *)clientUserID;

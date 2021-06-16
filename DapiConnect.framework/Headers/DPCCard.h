@@ -34,6 +34,8 @@ NS_SWIFT_NAME(DapiCard)
 
 - (instancetype)initWithDictionary:(NSDictionary<NSString *, id> *)dictionary;
 
++ (NSArray<DPCCard *> *)initCardsWithDictionary:(NSDictionary<NSString *, id> *)responseDictionary;
+
 @end
 
 NS_ASSUME_NONNULL_END
