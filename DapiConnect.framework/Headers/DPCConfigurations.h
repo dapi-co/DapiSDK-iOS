@@ -24,6 +24,7 @@ extern DPCEndPoint const DPCEndPointCreateTransfer;
 extern DPCEndPoint const DPCEndPointCreateTransferToExistingBeneficiary;
 extern DPCEndPoint const DPCEndPointResumeJob;
 extern DPCEndPoint const DPCEndPointDelinkUser;
+extern DPCEndPoint const DPCEndPointGetCards;
 
 typedef NSString *DPCEnvironment NS_TYPED_EXTENSIBLE_ENUM;
 
