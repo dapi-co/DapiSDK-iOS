@@ -1,5 +1,5 @@
 # DapiConnect iOS SDK
-![CocoaPods Compatible](https://img.shields.io/cocoapods/v/DapiConnect)
+![CocoaPods Compatible](https://img.shields.io/cocoapods/v/DapiSDK)
 
 ## Overview
 
