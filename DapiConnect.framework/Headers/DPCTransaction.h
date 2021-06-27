@@ -14,14 +14,14 @@ NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(DapiTransaction)
 @interface DPCTransaction : NSObject
 
-@property (nonatomic, strong) NSNumber *beforeAmount;
-@property (nonatomic, strong) NSNumber *afterAmount;
-@property (nonatomic, strong) NSNumber *amount;
-@property (nonatomic, strong) DPCPair *currency;
-@property (nonatomic, strong) NSDate *date;
-@property (nonatomic, copy) NSString *transactionDescription;
-@property (nullable, nonatomic, copy) NSString *details;
-@property (nonatomic, copy) NSString *type;
+@property (nonatomic, strong, nullable) NSNumber *beforeAmount;
+@property (nonatomic, strong, nullable) NSNumber *afterAmount;
+@property (nonatomic, strong, nullable) NSNumber *amount;
+@property (nonatomic, strong, nullable) DPCPair *currency;
+@property (nonatomic, strong, nullable) NSDate *date;
+@property (nonatomic, copy, nullable) NSString *transactionDescription;
+@property (nonatomic, copy, nullable) NSString *details;
+@property (nonatomic, copy, nullable) NSString *type;
 
 - (instancetype)initWithDictionary:(NSDictionary<NSString *, id> *)dictionary;
 
