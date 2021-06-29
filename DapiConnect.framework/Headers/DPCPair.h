@@ -13,8 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(DapiPair)
 @interface DPCPair : NSObject
 
-@property (nonatomic, strong) NSString *code;
-@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong, nullable) NSString *code;
+@property (nonatomic, strong, nullable) NSString *name;
 
 - (instancetype)initWithDictionary:(NSDictionary<NSString *, id> *)dictionary;
 

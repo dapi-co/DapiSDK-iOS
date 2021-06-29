@@ -14,12 +14,12 @@ NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(DapiAccount)
 @interface DPCAccount : NSObject
 
-@property (nonatomic, strong) NSString *iban;
-@property (nonatomic, strong) NSString *number;
-@property (nonatomic, strong) DPCPair *currency;
-@property (nonatomic, strong) NSString *type;
-@property (nonatomic, strong) NSString *name;
-@property (nonatomic, strong) NSString *accountID;
+@property (nonatomic, strong, nullable) NSString *iban;
+@property (nonatomic, strong, nullable) NSString *number;
+@property (nonatomic, strong, nullable) DPCPair *currency;
+@property (nonatomic, strong, nullable) NSString *type;
+@property (nonatomic, strong, nullable) NSString *name;
+@property (nonatomic, strong, nullable) NSString *accountID;
 @property (nonatomic, assign) double balance;
 
 - (instancetype)initWithDictionary:(NSDictionary<NSString *, id> *)dictionary;

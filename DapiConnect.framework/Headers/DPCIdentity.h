@@ -16,13 +16,13 @@ NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(DapiIdentity)
 @interface DPCIdentity : NSObject
 
-@property (nonatomic, copy) NSString *nationality;
-@property (nonatomic, copy) NSString *dateOfBirth;
-@property (nonatomic, copy) NSArray<DPCNumber *> *numbers;
-@property (nonatomic, copy) NSString *emailAddress;
-@property (nonatomic, copy) NSString *name;
-@property (nonatomic, strong) DPCAddress *address;
-@property (nonatomic, copy) NSArray<DPCIdentification *> *identifications;
+@property (nonatomic, copy, nullable) NSString *nationality;
+@property (nonatomic, copy, nullable) NSString *dateOfBirth;
+@property (nonatomic, copy, nullable) NSArray<DPCNumber *> *numbers;
+@property (nonatomic, copy, nullable) NSString *emailAddress;
+@property (nonatomic, copy, nullable) NSString *name;
+@property (nonatomic, strong, nullable) DPCAddress *address;
+@property (nonatomic, copy, nullable) NSArray<DPCIdentification *> *identifications;
 
 - (instancetype)initWithDictionary:(NSDictionary<NSString *, id> *)dictionary;
 

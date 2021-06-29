@@ -13,8 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(DapiNumber)
 @interface DPCNumber : NSObject
 
-@property (nonatomic, copy) NSString *type;
-@property (nonatomic, copy) NSString *value;
+@property (nonatomic, copy, nullable) NSString *type;
+@property (nonatomic, copy, nullable) NSString *value;
 
 - (instancetype)initWithDictionary:(NSDictionary<NSString *, id> *)dictionary;
 

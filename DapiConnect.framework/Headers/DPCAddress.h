@@ -13,14 +13,14 @@ NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(DapiAddress)
 @interface DPCAddress : NSObject
 
-@property (nonatomic, copy) NSString *flat;
-@property (nonatomic, copy) NSString *building;
-@property (nonatomic, copy) NSString *area;
-@property (nonatomic, copy) NSString *poBox;
-@property (nonatomic, copy) NSString *city;
-@property (nonatomic, copy) NSString *state;
-@property (nonatomic, copy) NSString *country;
-@property (nonatomic, copy) NSString *full;
+@property (nonatomic, copy, nullable) NSString *flat;
+@property (nonatomic, copy, nullable) NSString *building;
+@property (nonatomic, copy, nullable) NSString *area;
+@property (nonatomic, copy, nullable) NSString *poBox;
+@property (nonatomic, copy, nullable) NSString *city;
+@property (nonatomic, copy, nullable) NSString *state;
+@property (nonatomic, copy, nullable) NSString *country;
+@property (nonatomic, copy, nullable) NSString *full;
 
 - (instancetype)initWithDictionary:(NSDictionary<NSString *, id> *)dictionary;
 
