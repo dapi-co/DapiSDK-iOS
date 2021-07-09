@@ -14,9 +14,9 @@ NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(DapiTransferBound)
 @interface DPCTransferBound : NSObject
 
-@property (nonatomic, strong) NSNumber *minimum;
-@property (nonatomic, strong) DPCPair *currency;
-@property (nonatomic, copy) NSString *type;
+@property (nullable, nonatomic, strong) NSNumber *minimum;
+@property (nullable, nonatomic, strong) DPCPair *currency;
+@property (nullable, nonatomic, copy) NSString *type;
 
 - (instancetype)initWithDictionary:(NSDictionary<NSString *, id> *)dictionary;
 
