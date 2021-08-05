@@ -30,6 +30,7 @@ NS_SWIFT_NAME(DapiBeneficiary)
 @property (nonatomic, copy, nullable) NSString *country;
 @property (nonatomic, copy, nullable) NSString *branchAddress;
 @property (nonatomic, copy, nullable) NSString *branchName;
+@property (nonatomic, copy, nullable) NSString *nickname;
 @property (nonatomic, copy, nullable) DPCBeneficiaryType type;
 
 - (NSDictionary<NSString *, id> *)dictionaryRepresentation;

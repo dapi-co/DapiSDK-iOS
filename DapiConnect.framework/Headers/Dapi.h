@@ -72,6 +72,10 @@ NS_SWIFT_NAME(DapiConnectDelegate)
 /// @param delegate A protocol that defines callback methods for successful and failure bank connection trials.
 - (void)presentConnect:(id<DPCConnectDelegate>)delegate;
 
+/// Presents a UI to let your users connect their bank account
+/// @param delegate A protocol that defines callback methods for successful and failure bank connection trials.
+/// @param bankID Connect layer will be presented with the provided bank ID. If bank ID is not valid, connect will show a screen with error "503 This bank is currently under maintenance".
+- (void)presentConnect:(id<DPCConnectDelegate>)delegate bankID:(NSString *_Nullable)bankID;
 
 /// Closes the presented connect UI, if any.
 - (void)dismissConnect;

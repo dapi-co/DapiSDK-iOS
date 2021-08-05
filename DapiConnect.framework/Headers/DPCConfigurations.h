@@ -19,6 +19,7 @@ extern DPCEndPoint const DPCEndPointGetAccountMetadata;
 extern DPCEndPoint const DPCEndPointGetBalance;
 extern DPCEndPoint const DPCEndPointGetTransactions;
 extern DPCEndPoint const DPCEndPointGetBeneficiaries;
+extern DPCEndPoint const DPCEndPointGetWireBeneficiaries;
 extern DPCEndPoint const DPCEndPointCreateBeneficiary;
 extern DPCEndPoint const DPCEndPointCreateTransfer;
 extern DPCEndPoint const DPCEndPointCreateTransferToExistingBeneficiary;

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		m86SOigEl4jlMHIqbbEPRAoIeNQ=
+		ALKH2x7bYd/rNDfogyFrVe+rigA=
 		</data>
 		<key>DapiConnect.momd/DapiConnect.mom</key>
 		<data>
@@ -416,7 +416,7 @@
 		</data>
 		<key>Headers/DPCBeneficiary.h</key>
 		<data>
-		0VI+M5UYwZX1iFxnpscKr5sXxkM=
+		hSuGzVQpmVtof7WhZd0GbRDmM6E=
 		</data>
 		<key>Headers/DPCCard.h</key>
 		<data>
@@ -428,7 +428,7 @@
 		</data>
 		<key>Headers/DPCConfigurations.h</key>
 		<data>
-		lEPOtD/f0hXISEKJESxIfiNOxI0=
+		zLct9fHymZ0yZeX7dToInYGW9ug=
 		</data>
 		<key>Headers/DPCIdentification.h</key>
 		<data>
@@ -462,9 +462,21 @@
 		<data>
 		0Fz6O2kH0cLX/Pnu5694Dm6XQII=
 		</data>
+		<key>Headers/DPCWireAddress.h</key>
+		<data>
+		ApB/d/UjZhaiCmEgZygGQ5cJS5w=
+		</data>
+		<key>Headers/DPCWireBeneficiary.h</key>
+		<data>
+		lEotxvaoPADzVdXsehiqdIx5l04=
+		</data>
+		<key>Headers/DPCWireRoutingNumbers.h</key>
+		<data>
+		9xLFJaXeY8OxMitFn+SglEZJgX4=
+		</data>
 		<key>Headers/Dapi.h</key>
 		<data>
-		RSTnC8ihKp33jQgbaYRgx6hN+i0=
+		TJGgpfm7yhJM3AWNvxHRs4RbUAg=
 		</data>
 		<key>Headers/DapiConnect.h</key>
 		<data>
@@ -472,15 +484,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		kAQxOog5KALwcJ+bUAT82QMzUGs=
+		LWiDZEbwZSpdidOd9yfJIGHnaLw=
 		</data>
 		<key>MFAOnboardingViewController.nib/objects-11.0+.nib</key>
 		<data>
-		/UeaMkAx5/rf7jdsLs1ARtMlYh4=
+		7gDy3nHtLqyXeS9UBCatHtVkdCE=
 		</data>
 		<key>MFAOnboardingViewController.nib/runtime.nib</key>
 		<data>
-		EjrX8/SZEfCfK5NEWw7gdL614pk=
+		tLrluJ6mjp7PcP4FxW/XlAzK9hQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -565,11 +577,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			m86SOigEl4jlMHIqbbEPRAoIeNQ=
+			ALKH2x7bYd/rNDfogyFrVe+rigA=
 			</data>
 			<key>hash2</key>
 			<data>
-			J5P9VWfiXg7OnKY+fbcAa6DhHHXNQK0gJT9O0kIbhmA=
+			o2Kccnaf98PZBu/7yaFl3naP0Qe4Ae1GJvhOu2YQyJg=
 			</data>
 		</dict>
 		<key>DapiConnect.momd/DapiConnect.mom</key>
@@ -1199,11 +1211,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0VI+M5UYwZX1iFxnpscKr5sXxkM=
+			hSuGzVQpmVtof7WhZd0GbRDmM6E=
 			</data>
 			<key>hash2</key>
 			<data>
-			TfrxFyeur4k6s+WuFmlJAFsXG8yCqzJOBs3KUTBiCu0=
+			yNpgHyNoiAgqCbrcAlDO3QkUJapUUzrDQEVpiFZVh9Q=
 			</data>
 		</dict>
 		<key>Headers/DPCCard.h</key>
@@ -1232,11 +1244,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lEPOtD/f0hXISEKJESxIfiNOxI0=
+			zLct9fHymZ0yZeX7dToInYGW9ug=
 			</data>
 			<key>hash2</key>
 			<data>
-			gae+rdsDJeU9Zu9vvvQJAoqoX1obiNPtzwexlJIkCl4=
+			e6kkH1uhspgL2GUx7pFQjOvUeAe7rGJEobBcbT1Zu5s=
 			</data>
 		</dict>
 		<key>Headers/DPCIdentification.h</key>
@@ -1327,15 +1339,48 @@
 			sBkns6pAkGksfDKi0LYHK3Kb1OTrIKX3jlpTGEPGA0M=
 			</data>
 		</dict>
+		<key>Headers/DPCWireAddress.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ApB/d/UjZhaiCmEgZygGQ5cJS5w=
+			</data>
+			<key>hash2</key>
+			<data>
+			OwMXrmBG9XL6vGE45EdCmYT4ZbNROXB/KCz/Bl/TDa0=
+			</data>
+		</dict>
+		<key>Headers/DPCWireBeneficiary.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lEotxvaoPADzVdXsehiqdIx5l04=
+			</data>
+			<key>hash2</key>
+			<data>
+			LXB6PVHZKIFsECY+AUyu/vijDj+vs9jM8IDd4YRnxlY=
+			</data>
+		</dict>
+		<key>Headers/DPCWireRoutingNumbers.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9xLFJaXeY8OxMitFn+SglEZJgX4=
+			</data>
+			<key>hash2</key>
+			<data>
+			PHDWDrKCE7+pyJky+vNAKvjs8PfObq0iwdJFC3Erwxw=
+			</data>
+		</dict>
 		<key>Headers/Dapi.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RSTnC8ihKp33jQgbaYRgx6hN+i0=
+			TJGgpfm7yhJM3AWNvxHRs4RbUAg=
 			</data>
 			<key>hash2</key>
 			<data>
-			3tTAXKzDI6dW4eQjPot70o2NeclZwP2NVjNULocIFZ8=
+			8uRiC4C+Gd1PH4tewPHKVrfUF4p+TpKd9yHW0881JS8=
 			</data>
 		</dict>
 		<key>Headers/DapiConnect.h</key>
@@ -1353,22 +1398,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/UeaMkAx5/rf7jdsLs1ARtMlYh4=
+			7gDy3nHtLqyXeS9UBCatHtVkdCE=
 			</data>
 			<key>hash2</key>
 			<data>
-			eixFO6p8nzE/CEmB5aULBdYHoQSgfsHOV7GCYHTjG6E=
+			XpImUxyoHwA9jrL3zpzTbqHJnRFqBqef7APU2H6OAyY=
 			</data>
 		</dict>
 		<key>MFAOnboardingViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			EjrX8/SZEfCfK5NEWw7gdL614pk=
+			tLrluJ6mjp7PcP4FxW/XlAzK9hQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			TlhU2I6lyfJv8npXiu7xDFFZbLiZmIctD1toCQE/4o4=
+			9m+yQ9gv4upMhi1NIDwFCa3twXF8GxdnE8Tbp2Z/RNg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
