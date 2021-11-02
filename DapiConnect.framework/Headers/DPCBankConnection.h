@@ -25,6 +25,7 @@ typedef void (^TransferBlock)(DPCAccount *__nullable account, double amount, NSE
 @property (nonnull, nonatomic, copy, readonly) NSString *userID;
 @property (nonnull, nonatomic, copy, readonly) NSString *clientUserID;
 @property (nonnull, nonatomic, copy, readonly) NSString *bankID;
+@property (nonnull, nonatomic, copy, readonly) NSString *swiftCode;
 @property (nonnull, nonatomic, copy, readonly) NSString *bankName;
 @property (nonnull, nonatomic, copy, readonly) NSString *countryName;
 @property (nonnull, nonatomic, copy, readonly) NSString *fullLogo;
