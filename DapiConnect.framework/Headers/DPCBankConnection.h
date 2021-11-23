@@ -14,6 +14,8 @@
 #import "DPCResult.h"
 #import "DPCBankBeneficiary.h"
 #import "DPCCard.h"
+#import "DPCBankWireBeneficiary.h"
+#import "DPCWireBeneficiary.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -60,10 +62,15 @@ typedef void (^TransferBlock)(DPCAccount *__nullable account, double amount, NSE
 
 - (void)getBeneficiaries:(void (^ __nullable)(NSArray<DPCBankBeneficiary *> *__nullable beneficiaries, NSError *__nullable error, NSString *__nullable operationID))completion;
 
+//- (void)getWireBeneficiaries:(void (^ __nullable)(NSArray<DPCBankWireBeneficiary *> *__nullable beneficiaries, NSError *__nullable error, NSString *__nullable operationID))completion;
+
 - (void)createBeneficiary:(DPCBeneficiary *)beneficiaryDetails
                        completion:(void (^ __nullable)(DPCResult *__nullable result, NSError *__nullable error, NSString *__nullable operationID))completion;
+//- (void)createWireBeneficiary:(DPCWireBeneficiary *)beneficiaryDetails completion:(void (^ __nullable)(DPCResult *__nullable result, NSError *__nullable error, NSString *__nullable operationID))completion;
 
 - (void)createTransferToExistingBeneficiaryFromAccount:(DPCAccount *)account beneficiaryID:(NSString *)beneficiaryID amount:(double)amount remark:(NSString *__nullable)remark completion:(TransferBlock)completion;
+
+//- (void)createWireTransferToExistingBeneficiaryFromAccount:(DPCAccount *)account beneficiaryID:(NSString *)beneficiaryID amount:(double)amount remark:(NSString *__nullable)remark completion:(TransferBlock)completion;
 
 - (void)createTransfer:(void (^ __nullable)(DPCAccount *account, double amount, NSError *__nullable error, NSString *__nullable operationID))completion;
 
