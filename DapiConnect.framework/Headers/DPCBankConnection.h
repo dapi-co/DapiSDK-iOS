@@ -23,6 +23,7 @@ NS_SWIFT_NAME(DapiBankConnection)
 @interface DPCBankConnection : NSObject
 
 typedef void (^TransferBlock)(DPCAccount *__nullable account, double amount, NSError *__nullable error, NSString *__nullable operationID);
+typedef void (^TransferBlockWithReferenceNumber)(DPCAccount *__nullable account, double amount, NSError *__nullable error, NSString *__nullable operationID, NSString *__nullable referanceNumber);
 
 @property (nonnull, nonatomic, copy, readonly) NSString *userID;
 @property (nonnull, nonatomic, copy, readonly) NSString *clientUserID;
@@ -100,20 +101,20 @@ typedef void (^TransferBlock)(DPCAccount *__nullable account, double amount, NSE
                            remark:(NSString *__nullable)remark
                        completion:(TransferBlock)completion;
 
+- (void)createWireTransferToWireBeneficiary:(DPCWireBeneficiary *)wireBeneficiary
+                                 completion:(TransferBlock)completion;
+
 
 
 - (void)createWireTransferFromAccount:(DPCAccount *__nullable)account
                     toWireBeneficiary:(DPCWireBeneficiary *)wireBeneficiary
                            completion:(TransferBlock)completion;
-
-
-- (void)createWireTransferToWireBeneficiary:(DPCWireBeneficiary *)wireBeneficiary
-                                 completion:(TransferBlock)completion;
 
 - (void)createWireTransferFromAccount:(DPCAccount *__nullable)account
                     toWireBeneficiary:(DPCWireBeneficiary *)wireBeneficiary
                                amount:(double)amount
                            completion:(TransferBlock)completion;
+
 
 - (void)createWireTransferFromAccount:(DPCAccount *__nullable)account
                     toWireBeneficiary:(DPCWireBeneficiary *)wireBeneficiary
@@ -121,8 +122,29 @@ typedef void (^TransferBlock)(DPCAccount *__nullable account, double amount, NSE
                            remark:(NSString *__nullable)remark
                            completion:(TransferBlock)completion;
 
+- (void)createWireTransferFromAccount:(DPCAccount *__nullable)account
+            toWireBeneficiary:(DPCWireBeneficiary *)wireBeneficiary
+                       amount:(double)amount
+completionWithReferenceNumber:(TransferBlockWithReferenceNumber)completionWithReferenceNumber
+                               remark:(NSString *__nullable)remark;
 
+- (void)createTransferFromAccount:(DPCAccount *__nullable)account
+                    toBeneficiary:(DPCBeneficiary *)beneficiary
+                           amount:(double)amount
+    completionWithReferenceNumber:(TransferBlockWithReferenceNumber)completionWithReferenceNumber
+                           remark:(NSString *__nullable)remark;
 
+- (void)createTransferToExistingBeneficiaryFromAccount:(DPCAccount *)account
+                                         beneficiaryID:(NSString *)beneficiaryID
+                                                amount:(double)amount
+                         completionWithReferenceNumber:(TransferBlockWithReferenceNumber)completionWithReferenceNumber
+                                                remark:(NSString *__nullable)remark;
+
+- (void)createWireTransferToExistingBeneficiaryFromAccount:(DPCAccount *)account
+                                             beneficiaryID:(NSString *)beneficiaryID
+                                                    amount:(double)amount
+                             completionWithReferenceNumber:(TransferBlockWithReferenceNumber)completionWithReferenceNumber
+                                                    remark:(NSString *__nullable)remark;
 
 - (void)delete:(void (^ __nullable)(DPCResult *__nullable result, NSError *__nullable error))completion;
 

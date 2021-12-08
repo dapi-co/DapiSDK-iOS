@@ -130,9 +130,12 @@ extension ViewController {
         beneficiary.branchName = "Emirates NBD Bank PJSC"
         beneficiary.phoneNumber = "0123456789"
         beneficiary.name = "John Doe"
+        connection.createTransfer(from: account,
+                                  to: beneficiary,
+                                  amount: 1,
+                                  completionWithReferenceNumber: { (account, amount, error, id, referenceNumber) in
+            print(referenceNumber, error)
+        }, remark: "remark")
         
-        connection.createTransfer(from: account, to: beneficiary, amount: amount) { (account, amount, error, operationID) in
-            print(account)
-        }
     }
 }
