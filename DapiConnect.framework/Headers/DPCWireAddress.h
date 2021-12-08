@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DPCWireAddress : NSObject
 
 @property (nonatomic, copy)           NSString *city;
-@property (nonatomic, strong)         DPCPair *country;
+@property (nonatomic, copy)         NSString *country;
 @property (nonatomic, copy)           NSString *full;
 @property (nonatomic, nullable, copy) NSString * poBox;
 @property (nonatomic, copy)           NSString *state;

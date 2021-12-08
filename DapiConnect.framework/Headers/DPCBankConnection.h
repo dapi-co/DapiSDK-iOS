@@ -62,15 +62,15 @@ typedef void (^TransferBlock)(DPCAccount *__nullable account, double amount, NSE
 
 - (void)getBeneficiaries:(void (^ __nullable)(NSArray<DPCBankBeneficiary *> *__nullable beneficiaries, NSError *__nullable error, NSString *__nullable operationID))completion;
 
-//- (void)getWireBeneficiaries:(void (^ __nullable)(NSArray<DPCBankWireBeneficiary *> *__nullable beneficiaries, NSError *__nullable error, NSString *__nullable operationID))completion;
+- (void)getWireBeneficiaries:(void (^ __nullable)(NSArray<DPCBankWireBeneficiary *> *__nullable beneficiaries, NSError *__nullable error, NSString *__nullable operationID))completion;
 
 - (void)createBeneficiary:(DPCBeneficiary *)beneficiaryDetails
                        completion:(void (^ __nullable)(DPCResult *__nullable result, NSError *__nullable error, NSString *__nullable operationID))completion;
-//- (void)createWireBeneficiary:(DPCWireBeneficiary *)beneficiaryDetails completion:(void (^ __nullable)(DPCResult *__nullable result, NSError *__nullable error, NSString *__nullable operationID))completion;
+- (void)createWireBeneficiary:(DPCWireBeneficiary *)beneficiaryDetails completion:(void (^ __nullable)(DPCResult *__nullable result, NSError *__nullable error, NSString *__nullable operationID))completion;
 
 - (void)createTransferToExistingBeneficiaryFromAccount:(DPCAccount *)account beneficiaryID:(NSString *)beneficiaryID amount:(double)amount remark:(NSString *__nullable)remark completion:(TransferBlock)completion;
 
-//- (void)createWireTransferToExistingBeneficiaryFromAccount:(DPCAccount *)account beneficiaryID:(NSString *)beneficiaryID amount:(double)amount remark:(NSString *__nullable)remark completion:(TransferBlock)completion;
+- (void)createWireTransferToExistingBeneficiaryFromAccount:(DPCAccount *)account beneficiaryID:(NSString *)beneficiaryID amount:(double)amount remark:(NSString *__nullable)remark completion:(TransferBlock)completion;
 
 - (void)createTransfer:(void (^ __nullable)(DPCAccount *account, double amount, NSError *__nullable error, NSString *__nullable operationID))completion;
 
@@ -99,6 +99,30 @@ typedef void (^TransferBlock)(DPCAccount *__nullable account, double amount, NSE
                            amount:(double)amount
                            remark:(NSString *__nullable)remark
                        completion:(TransferBlock)completion;
+
+
+
+- (void)createWireTransferFromAccount:(DPCAccount *__nullable)account
+                    toWireBeneficiary:(DPCWireBeneficiary *)wireBeneficiary
+                           completion:(TransferBlock)completion;
+
+
+- (void)createWireTransferToWireBeneficiary:(DPCWireBeneficiary *)wireBeneficiary
+                                 completion:(TransferBlock)completion;
+
+- (void)createWireTransferFromAccount:(DPCAccount *__nullable)account
+                    toWireBeneficiary:(DPCWireBeneficiary *)wireBeneficiary
+                               amount:(double)amount
+                           completion:(TransferBlock)completion;
+
+- (void)createWireTransferFromAccount:(DPCAccount *__nullable)account
+                    toWireBeneficiary:(DPCWireBeneficiary *)wireBeneficiary
+                           amount:(double)amount
+                           remark:(NSString *__nullable)remark
+                           completion:(TransferBlock)completion;
+
+
+
 
 - (void)delete:(void (^ __nullable)(DPCResult *__nullable result, NSError *__nullable error))completion;
 
