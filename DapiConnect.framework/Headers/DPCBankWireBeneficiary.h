@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "DPCWireAddress.h"
-#import "DPCWireRoutingNumbers.h"
 
 NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(DapiBankWireBeneficiary)
@@ -19,7 +18,7 @@ NS_SWIFT_NAME(DapiBankWireBeneficiary)
 @property(nonatomic, copy) NSString *bankName;
 @property(nonatomic, copy) NSString *accountID;
 @property(nonatomic, copy) NSString *name;
-@property(nonatomic, strong) DPCWireRoutingNumbers *routingNumbers;
+@property(nonatomic, copy) NSString *routingNumber;
 @property(nonatomic, nullable, copy) id status;
 @property(nonatomic, nullable, copy) id type;
 

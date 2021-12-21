@@ -123,14 +123,14 @@
     beneficiary.branchName = @"Emirates NBD Bank PJSC";
     beneficiary.phoneNumber = @"0123456789";
     beneficiary.name = @"John Doe";
-    
-    [connection createTransferFromAccount:account toBeneficiary:beneficiary completion:^(DPCAccount * _Nullable account, NSUInteger amount, NSError * _Nullable error, NSString * _Nullable operationID) {
+    [connection createTransferFromAccount:account toBeneficiary:beneficiary completion:^(DPCAccount * _Nullable account, double amount, NSError * _Nullable error, NSString * _Nullable operationID) {
         if (error) {
             [self showAlertWithTitle:@"Error" message:error.localizedDescription];
         } else {
             [self showAlertWithTitle:@"Transfer success" message:[NSString stringWithFormat:@"Transfer from account: %@", account.accountID]];
         }
     }];
+
 }
 
 @end
