@@ -18,3 +18,5 @@ xcuserdata/
 ## Other
 *.moved-aside
 *.xcuserstate
+
+Pods/
