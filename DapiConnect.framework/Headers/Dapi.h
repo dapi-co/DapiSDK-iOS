@@ -9,8 +9,49 @@
 #import <Foundation/Foundation.h>
 #import "DPCBankConnection.h"
 #import "DPCConfigurations.h"
+#import "DPCAutoFlow.h"
 
 NS_ASSUME_NONNULL_BEGIN
+@class DPCAutoFlow;
+
+NS_SWIFT_NAME(DapiAutoFlowDelegate)
+@protocol DPCAutoFlowDelegate <NSObject>
+
+///// A beneficiary info to transfer the money to.
+///// @param autoFlow The AutoFlow object initiated the call.
+///// @param bankID The bankID the user transferring money from.
+///// @param info The beneficiary info callback.
+//
+// +(void)autoFlow:(DPCAutoFlow *)autoFlow beneficiaryInfoForBankWithID:(NSString *)bankID beneficiaryInfo:(void (^)(DPCBeneficiary *_Nullable beneficiaryInfo))info;
+
+///// A wireBeneficiary info to transfer the money to.
+///// @param autoFlow The AutoFlow object initiated the call.
+///// @param bankID The bankID the user transferring money from.
+///// @param info The wireBeneficiary info callback.
+//- (void)autoFlow:(DPCAutoFlow *)autoFlow wireBeneficiaryInfoForBankWithID:(NSString *)bankID wireBeneficiaryInfo:(void (^)(DPCWireBeneficiary *_Nullable wireBeneficiaryInfo))info;
+
+
+/// Called before a transfer request is executed.
+/// @param autoFlow The AutoFlow object initiated the call.
+/// @param amount The amount  to be transacted.
+/// @param senderAccount The account will initiate transfer request.
+- (void)autoFlow:(DPCAutoFlow *)autoFlow willTransferAmount:(double)amount fromAccount:(DPCAccount *)senderAccount;
+
+///// Called after a succesful transfer.
+///// @param autoFlow The AutoFlow object initiated the call.
+///// @param amount The transacted amount.
+///// @param senderAccount The account initiated transfer request.
+///// @param recipientAccountID Receiver account ID.
+//- (void)autoFlow:(DPCAutoFlow *)autoFlow didSuccessfullyTransferAmount:(double)amount fromAccount:(DPCAccount *)senderAccount toAccuntID:(NSString * _Nonnull)recipientAccountID;
+//
+///// Called after a failed transfer.
+///// @param autoFlow The AutoFlow object initiated the call.
+///// @param senderAccount The account initiated transfer request.
+///// @param recipientAccountID Receiver account ID.
+///// @param error The reason why a transfer failed.
+//- (void)autoFlow:(DPCAutoFlow *)autoFlow didFailToTransferFromAccount:(DPCAccount *)senderAccount toAccuntID:(NSString * _Nonnull)recipientAccountID withError:(NSError *)error;
+
+@end
 
 NS_SWIFT_NAME(DapiConnectDelegate)
 /// Callbacks of connecting a bank account.

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,8 +21,6 @@
 		04F723DA258654790022B816 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F723D8258654790022B816 /* LaunchScreen.storyboard */; };
 		04F723DD258654790022B816 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F723DC258654790022B816 /* main.m */; };
 		04F723E12586548D0022B816 /* Example-Swift.app in Resources */ = {isa = PBXBuildFile; fileRef = 04F723AD25863F410022B816 /* Example-Swift.app */; };
-		50D6881925DBF8E4007ACA03 /* DapiConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D6881525DBF8DB007ACA03 /* DapiConnect.framework */; };
-		50D6881A25DBF8E4007ACA03 /* DapiConnect.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 50D6881525DBF8DB007ACA03 /* DapiConnect.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		65C3F2D4E409ACC2F56B9651 /* Pods_Example_Objc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13297A5191A2E6D96C872E38 /* Pods_Example_Objc.framework */; };
 		E315D7534CA0E5C7C1CC9194 /* Pods_Example_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B20A012B8DF4502C46621A6 /* Pods_Example_Swift.framework */; };
 /* End PBXBuildFile section */
@@ -36,20 +34,6 @@
 			remoteInfo = "Example-Swift";
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		50D6881B25DBF8E4007ACA03 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				50D6881A25DBF8E4007ACA03 /* DapiConnect.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0465D34425863B960030182C /* DapiConnect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DapiConnect.framework; path = ../DapiConnect.framework; sourceTree = "<group>"; };
@@ -95,7 +79,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50D6881925DBF8E4007ACA03 /* DapiConnect.framework in Frameworks */,
 				65C3F2D4E409ACC2F56B9651 /* Pods_Example_Objc.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,7 +157,6 @@
 				BFE4BDC348185ABA6B38AE87 /* Pods-Example-Swift.debug.xcconfig */,
 				906B7BEEF90E24F5CA892BF0 /* Pods-Example-Swift.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,7 +190,6 @@
 				04F723C4258654780022B816 /* Sources */,
 				04F723C5258654780022B816 /* Frameworks */,
 				04F723C6258654780022B816 /* Resources */,
-				50D6881B25DBF8E4007ACA03 /* Embed Frameworks */,
 				6179782A2B0901E92F64513C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (

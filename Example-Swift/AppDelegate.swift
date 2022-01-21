@@ -15,8 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-        Dapi.start(appKey: "ae473ebe572718081692256b62589c29d83ad6d1167dadaa7822482da965723d", clientUserID: "JohnDoe123") { (dapi, error) in
+        // Override point for customization after application launch.
+        let configs = DapiConfigurations(countries: ["SA"], environment: .sandbox)
+        configs.postSuccessfulConnectionLoadingText = "Test loading text";
+        configs.showLogos = true
+
+        Dapi.start(appKey: "71a9779c3d1319b7381ebcb7ce79ab21e3a631256e7337a2db4956ddd4f6ac79",
+                   clientUserID: "JohnDoe123",
+                   configuration: configs) { (dapi, error) in
             
         }
         

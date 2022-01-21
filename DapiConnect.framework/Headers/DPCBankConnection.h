@@ -18,12 +18,13 @@
 #import "DPCWireBeneficiary.h"
 
 NS_ASSUME_NONNULL_BEGIN
+typedef NSString ReferenceNumber;
 
 NS_SWIFT_NAME(DapiBankConnection)
 @interface DPCBankConnection : NSObject
 
 typedef void (^TransferBlock)(DPCAccount *__nullable account, double amount, NSError *__nullable error, NSString *__nullable operationID);
-typedef void (^TransferBlockWithReferenceNumber)(DPCAccount *__nullable account, double amount, NSError *__nullable error, NSString *__nullable operationID, NSString *__nullable referanceNumber);
+typedef void (^TransferBlockWithReferenceNumber)(DPCAccount *__nullable account, double amount, NSError *__nullable error, NSString *__nullable operationID, ReferenceNumber *__nullable referanceNumber);
 
 @property (nonnull, nonatomic, copy, readonly) NSString *userID;
 @property (nonnull, nonatomic, copy, readonly) NSString *clientUserID;

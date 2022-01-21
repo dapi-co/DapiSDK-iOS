@@ -97,6 +97,10 @@ extension ViewController: DapiConnectDelegate {
         }
     }
     
+    func connectDidDismiss() {
+        print("connectDidDismiss")
+    }
+    
     func connectDidFailConnecting(toBankID bankID: String, withError error: String) {
         let errorTitle = "\(bankID) Connection Failed"
         showAlert(title: errorTitle, message: error)

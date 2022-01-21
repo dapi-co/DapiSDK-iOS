@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## 2.34.0 - 2022-1-21
+### Added
+-  Add `autoflowDelegate` delegate called for to track  AutoFlow operations.
+
 ## 2.33.0 - 2022-1-12
 ### Fixed
 -  `connectDidDismiss` delegate func called after close button tapped from the connect layer.
