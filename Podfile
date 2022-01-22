@@ -5,7 +5,7 @@ target 'Example-Objc' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-pod 'DapiSDK','2.33.0'
+pod 'DapiSDK'
 
 end
 
@@ -13,6 +13,6 @@ target 'Example-Swift' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-pod 'DapiSDK','2.33.0'
+pod 'DapiSDK'
 
 end
