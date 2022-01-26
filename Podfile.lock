@@ -1,5 +1,5 @@
 PODS:
-  - DapiSDK (2.34.0)
+  - DapiSDK (2.35.0)
 
 DEPENDENCIES:
   - DapiSDK
@@ -9,7 +9,7 @@ SPEC REPOS:
     - DapiSDK
 
 SPEC CHECKSUMS:
-  DapiSDK: dd4a13011877f770b77ad89e660c9fcd6f558db4
+  DapiSDK: de4cc9bbace13321fc53503cb5b0423bc674252b
 
 PODFILE CHECKSUM: 15bbff80fbdf6f43d2deb6e218252e385f2ef577
 
