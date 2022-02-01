@@ -1,0 +1,6 @@
+framework module DapiConnect {
+  umbrella header "DapiConnect.h"
+
+  export *
+  module * { export * }
+}
