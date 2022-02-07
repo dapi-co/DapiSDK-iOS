@@ -89,7 +89,10 @@ NS_SWIFT_NAME(DapiConfigurations)
 
 @property (nonatomic, strong) NSString *postSuccessfulConnectionLoadingText;
 
-@property (nonatomic, assign) BOOL showTransferResult;
+@property (nonatomic, assign) BOOL showTransferSuccessfulResult;
+
+@property (nonatomic, assign) BOOL showTransferErrorResult;
+
 
 
 - (instancetype)initWithCountries:(NSArray<NSString *> *_Nullable)countries environment:(DPCEnvironment _Nullable)environment;
