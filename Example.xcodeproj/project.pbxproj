@@ -21,8 +21,7 @@
 		04F723DA258654790022B816 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F723D8258654790022B816 /* LaunchScreen.storyboard */; };
 		04F723DD258654790022B816 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F723DC258654790022B816 /* main.m */; };
 		04F723E12586548D0022B816 /* Example-Swift.app in Resources */ = {isa = PBXBuildFile; fileRef = 04F723AD25863F410022B816 /* Example-Swift.app */; };
-		2AEEEBC227A6FBCD00175898 /* DapiConnect.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AEEEBC027A6FBBE00175898 /* DapiConnect.xcframework */; };
-		2AEEEBC327A6FBCD00175898 /* DapiConnect.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2AEEEBC027A6FBBE00175898 /* DapiConnect.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2AACF15B27B6C281009EB90C /* DapiConnect.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AACF15A27B6C281009EB90C /* DapiConnect.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +41,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2AEEEBC327A6FBCD00175898 /* DapiConnect.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,7 +48,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0465D34425863B960030182C /* DapiConnect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DapiConnect.framework; path = ../DapiConnect.framework; sourceTree = "<group>"; };
 		04F723AD25863F410022B816 /* Example-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F723AF25863F410022B816 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04F723B125863F410022B816 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,8 +68,7 @@
 		04F723D9258654790022B816 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04F723DB258654790022B816 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04F723DC258654790022B816 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2AEEEBC027A6FBBE00175898 /* DapiConnect.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = DapiConnect.xcframework; path = "../../../../Users/msz/xcframework-cocoapods-tut/MyFramework/DapiConnect.xcframework"; sourceTree = "<group>"; };
-		50D6881525DBF8DB007ACA03 /* DapiConnect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DapiConnect.framework; sourceTree = "<group>"; };
+		2AACF15A27B6C281009EB90C /* DapiConnect.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = DapiConnect.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AEEEBC227A6FBCD00175898 /* DapiConnect.xcframework in Frameworks */,
+				2AACF15B27B6C281009EB90C /* DapiConnect.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,7 +93,7 @@
 		0465D32225863AF60030182C = {
 			isa = PBXGroup;
 			children = (
-				2AEEEBC027A6FBBE00175898 /* DapiConnect.xcframework */,
+				2AACF15A27B6C281009EB90C /* DapiConnect.xcframework */,
 				04F723AE25863F410022B816 /* Example-Swift */,
 				04F723C9258654780022B816 /* Example-Objc */,
 				0465D32C25863AF60030182C /* Products */,
@@ -117,8 +113,6 @@
 		0465D34325863B960030182C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				50D6881525DBF8DB007ACA03 /* DapiConnect.framework */,
-				0465D34425863B960030182C /* DapiConnect.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
