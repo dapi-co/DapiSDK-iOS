@@ -6,8 +6,26 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		qxbT7M+RO5Cyby3gXacuVs/+hFw=
+		lDwqVAq6OzqHbDEdFovqrquO0mk=
 		</data>
+		<key>DapiConnect.bundle/ar.lproj/DapiConnect.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WC1GNfFXEZNsH1WniOH19OmjjyA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>DapiConnect.bundle/en.lproj/DapiConnect.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			b/0yjCg+MXJXs2P3ussREtPbI20=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>DapiConnect.momd/DapiConnect.mom</key>
 		<data>
 		n7vzqrcHL4wtE5cZv6MYMcuJg4o=
@@ -496,7 +514,7 @@
 		</data>
 		<key>Headers/Dapi.h</key>
 		<data>
-		hbhqAFNYW5C46gul6+62Ntvor0s=
+		5WEPaEZI2Tu6x64nsIf7RQt5CDY=
 		</data>
 		<key>Headers/DapiConnect.h</key>
 		<data>
@@ -504,15 +522,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		0WaXT6M5f8IZ19VhcU9jKUJoRWY=
+		lPWo9wzvjOSmVLYqvcFq0gR7r+c=
 		</data>
 		<key>MFAOnboardingViewController.nib/objects-11.0+.nib</key>
 		<data>
-		+l1akzA5f90vxdmxU1CIgn7DbuE=
+		7pd5h70v6uvvxpJUdUJjhlmfygo=
 		</data>
 		<key>MFAOnboardingViewController.nib/runtime.nib</key>
 		<data>
-		QxYQDLTnL/AlHo8pACIEN5WIWBc=
+		eS7oHvld28F5mMcGT3vfQkEXf4Q=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -601,12 +619,38 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qxbT7M+RO5Cyby3gXacuVs/+hFw=
+			lDwqVAq6OzqHbDEdFovqrquO0mk=
 			</data>
 			<key>hash2</key>
 			<data>
-			Z9prms/xmo04dztRKZZ/MzJWYSIbmtWmUAkSvBUaHEI=
+			PP9Dmwswr0b4+GusLkLO8BPxA5s65Pyj1eD84VwOIuI=
 			</data>
+		</dict>
+		<key>DapiConnect.bundle/ar.lproj/DapiConnect.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WC1GNfFXEZNsH1WniOH19OmjjyA=
+			</data>
+			<key>hash2</key>
+			<data>
+			3wHxgEaRxzIbTPIBa4ilnoYyh0fGUoueUFVysorJqmo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>DapiConnect.bundle/en.lproj/DapiConnect.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			b/0yjCg+MXJXs2P3ussREtPbI20=
+			</data>
+			<key>hash2</key>
+			<data>
+			xNdDrBvUEtClg4db8XC/Rse8m5kOnhyOCY5suWx35yk=
+			</data>
+			<key>optional</key>
+			<true/>
 		</dict>
 		<key>DapiConnect.momd/DapiConnect.mom</key>
 		<dict>
@@ -1455,11 +1499,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hbhqAFNYW5C46gul6+62Ntvor0s=
+			5WEPaEZI2Tu6x64nsIf7RQt5CDY=
 			</data>
 			<key>hash2</key>
 			<data>
-			1cytAfwhRFnN2AxMqypK0zAZZIk+NYeKxJeadNwa/v0=
+			K5Ds0JMiTOyCw2r3xHKFsE2toLBZU6oq2jmh+tAu/es=
 			</data>
 		</dict>
 		<key>Headers/DapiConnect.h</key>
@@ -1477,22 +1521,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+l1akzA5f90vxdmxU1CIgn7DbuE=
+			7pd5h70v6uvvxpJUdUJjhlmfygo=
 			</data>
 			<key>hash2</key>
 			<data>
-			asIKgBPJetsLjCSpuaJPMvKu14wIEd4osGpCYMljOsQ=
+			98FlLOS7/MYgN3XXfvV2ZwA/N5ZwF121YkiYHgqHlhk=
 			</data>
 		</dict>
 		<key>MFAOnboardingViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QxYQDLTnL/AlHo8pACIEN5WIWBc=
+			eS7oHvld28F5mMcGT3vfQkEXf4Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			s7jtH5JNAU0iAxjefOmMBysxQbkeZ/LN4VRPZl2CrMI=
+			0RFixUEotSsnKMTjS3TLx0kRdZIg+dTgSOR4Grzr+6c=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
