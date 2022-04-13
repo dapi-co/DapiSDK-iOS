@@ -6,7 +6,7 @@
 "YouWereLoggedOut" = "You were logged out";
 "AccountLocked" = "Account Locked";
 "Error" = "Error";
-"WireBeneficiaryActivateAfter %d %@" = "WireBeneficiary will be activated after %d %@";
+"WireBeneficiaryActivateAfter %@ %@" = "WireBeneficiary will be activated after %@ %@";
 "SomethingWentWrong" = "Something went wrong";
 "EnterAmount" = "Enter Amount";
 "UserCanceledAccountSelection" = "User canceled account selection.";
@@ -42,7 +42,7 @@
 "RemoveAccount" = "Remove account";
 "FetchingBalance" = "Fetching balance..";
 "Updated %@" = "Updated %@";
-"BeneficiaryActivateAfter %d %@" = "Beneficiary will be activated after %d %@";
+"BeneficiaryActivateAfter %@ %@" = "Beneficiary will be activated after %@ %@";
 "ConnectingWithYourBank" = "\nConnecting with your bank";
 "TransferLoaderMessage1" = "\nVerifying your transfer details";
 "TransferLoaderMessage2" = "\nPlease wait, processing your transfer can take up to 30 seconds";
