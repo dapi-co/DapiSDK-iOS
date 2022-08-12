@@ -44,6 +44,15 @@ NS_SWIFT_NAME(DapiAutoFlow)
                                                         NSError *__nullable error,
                                                         OperationID *__nullable operationID,
                                                         ReferenceNumber *__nullable referenceNumber))completion;
+- (instancetype)initWithConnection:(DPCBankConnection *)connection
+                           account:(DPCAccount * __nullable)account
+                            amount:(double)amount
+                       beneficiary:(DPCBeneficiary *)beneficiary
+                            remark:(NSString *)remark
+      completionWithTransferResult:(void (^ __nullable)(DPCAccount *account,
+                                                        double amount,
+                                                        NSError *__nullable error,
+                                                        DPCTransferResult *__nullable transferResult))completion;
 
 - (instancetype)initWithConnection:(DPCBankConnection *)connection
                            account:(DPCAccount * __nullable)account
@@ -55,6 +64,20 @@ NS_SWIFT_NAME(DapiAutoFlow)
                                                         NSError *__nullable error,
                                                         OperationID *__nullable operationID,
                                                         ReferenceNumber *__nullable referenceNumber))completion;
+- (instancetype)initWithConnection:(DPCBankConnection *)connection
+                           account:(DPCAccount * __nullable)account
+                            amount:(double)amount
+                   wireBeneficiary:(DPCWireBeneficiary *)wireBeneficiary
+                            remark:(NSString *)remark
+      completionWithTransferResult:(void (^ __nullable)(DPCAccount *account,
+                                                        double amount,
+                                                        NSError *__nullable error,
+                                                        DPCTransferResult *__nullable transferResult))completion;
+
+
+
+
+
 
 - (instancetype)init __attribute__((unavailable("use initWithClientUserID:account:amount:beneficiary:completion:")));
 
@@ -65,6 +88,8 @@ NS_SWIFT_NAME(DapiAutoFlow)
 /// Dismisses AutoFlow UI.
 /// @param completion Called after the dismissal animation is completed.
 - (void)dismissWithCompletion:(void (^ __nullable)(void))completion;
+
+- (void)dismissViewControllerAnimated: (BOOL)flag completion: (void (^ __nullable)(void))completion;
 
 @end
 

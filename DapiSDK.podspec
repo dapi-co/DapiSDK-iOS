@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|  
     s.name              = 'DapiSDK'
-    s.version           = '2.50.0'
+    s.version           = '2.51.0'
     s.summary           = 'Financial APIs to connect users bank accounts.'
     s.homepage          = 'https://dapi.com'
     s.author            = { 'Dapi' => 'hello@dapi.co' }
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
     s.cocoapods_version = '>= 1.10.0'
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
-
+  s.info_plist = { 'CFBundleVersion' => s.version.to_s}
 
     
 end  

@@ -18,6 +18,7 @@ NS_SWIFT_NAME(DapiResult)
 @property (nonatomic, assign) BOOL success;
 @property (nonatomic, copy) NSString *message;
 @property (nonatomic, copy,nullable) NSString *referenceNumber;
+@property (nonatomic, copy,nullable) NSString *remark;
 
 - (instancetype)initWithDictionary:(NSDictionary<NSString *, id> *)dictionary;
 
