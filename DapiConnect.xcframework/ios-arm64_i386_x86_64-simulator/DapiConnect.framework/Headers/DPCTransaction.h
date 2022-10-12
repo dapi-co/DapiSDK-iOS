@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DPCBrandDetails.h"
 #import "DPCPair.h"
 
 NS_ASSUME_NONNULL_BEGIN
@@ -22,6 +23,9 @@ NS_SWIFT_NAME(DapiTransaction)
 @property (nonatomic, copy, nullable) NSString *transactionDescription;
 @property (nonatomic, copy, nullable) NSString *details;
 @property (nonatomic, copy, nullable) NSString *type;
+@property (nonatomic, copy, nullable) NSString *category;
+@property (nonatomic, copy, nullable) NSString *reference;
+@property (nonatomic, strong, nullable) DPCBrandDetails *brandDetails;
 
 - (instancetype)initWithDictionary:(NSDictionary<NSString *, id> *)dictionary;
 

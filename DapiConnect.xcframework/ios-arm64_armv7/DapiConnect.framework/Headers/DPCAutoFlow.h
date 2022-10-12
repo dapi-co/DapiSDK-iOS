@@ -75,8 +75,8 @@ NS_SWIFT_NAME(DapiAutoFlow)
                                                         DPCTransferResult *__nullable transferResult))completion;
 
 
-
-
+- (instancetype)initWithConnection:(DPCBankConnection *)connection
+     completionWithSelectedAccount:(void (^ __nullable)(DPCAccount * __nullable account, NSError * __nullable error))completion;
 
 
 - (instancetype)init __attribute__((unavailable("use initWithClientUserID:account:amount:beneficiary:completion:")));

@@ -426,7 +426,7 @@
 		</data>
 		<key>Headers/DPCAutoFlow.h</key>
 		<data>
-		Mkh++hCRUAPx26nxNX7T8PZEItw=
+		DeZqwbb44S4TkKtLm24+xClX9Sg=
 		</data>
 		<key>Headers/DPCBalance.h</key>
 		<data>
@@ -438,7 +438,7 @@
 		</data>
 		<key>Headers/DPCBankConnection.h</key>
 		<data>
-		OqaZZRrz3Q3xL2tQyZleGTG91X0=
+		cWcJq8Fq9xRTGO0d+8MSVuygcZA=
 		</data>
 		<key>Headers/DPCBankMetadata.h</key>
 		<data>
@@ -452,6 +452,10 @@
 		<data>
 		hSuGzVQpmVtof7WhZd0GbRDmM6E=
 		</data>
+		<key>Headers/DPCBrandDetails.h</key>
+		<data>
+		j33l0pMPZePYVIm+10bkdNOuVHY=
+		</data>
 		<key>Headers/DPCCard.h</key>
 		<data>
 		ptE0OiPvsu3tH7T2th2/XyLaljU=
@@ -462,7 +466,7 @@
 		</data>
 		<key>Headers/DPCConfigurations.h</key>
 		<data>
-		laIrYISbLqeVnbezvjBiqyLmAtM=
+		wXHNQByBW27Hogy2RCDsyGQPbkY=
 		</data>
 		<key>Headers/DPCConnect.h</key>
 		<data>
@@ -498,7 +502,7 @@
 		</data>
 		<key>Headers/DPCTransaction.h</key>
 		<data>
-		7GMx3X0tKin7RwbT2Zw7Ea+m/+I=
+		aHmmxrfeyLKop9+gOSHxgkYMTvk=
 		</data>
 		<key>Headers/DPCTransferBound.h</key>
 		<data>
@@ -526,7 +530,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		w3Mrwghh2QycQX++juaody83lZ8=
+		NRt8rEpjNxFRvFz4Ymoo75Nq3GE=
 		</data>
 		<key>MFAOnboardingViewController.nib/objects-11.0+.nib</key>
 		<data>
@@ -1261,11 +1265,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Mkh++hCRUAPx26nxNX7T8PZEItw=
+			DeZqwbb44S4TkKtLm24+xClX9Sg=
 			</data>
 			<key>hash2</key>
 			<data>
-			Tz5z+Gm6AZMo8zUqZjwtea2fqlRdOIulDUBSsc1Eano=
+			dubGb4DKMPKBURZ8tTP2ZV2OSPf+bILqBogck6K/4Q4=
 			</data>
 		</dict>
 		<key>Headers/DPCBalance.h</key>
@@ -1294,11 +1298,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OqaZZRrz3Q3xL2tQyZleGTG91X0=
+			cWcJq8Fq9xRTGO0d+8MSVuygcZA=
 			</data>
 			<key>hash2</key>
 			<data>
-			Zun2hXFkjAILqAWCHPg0VSP644sdZfvi9trjN43Irhw=
+			zAhiX50zyv61bc0cvTFv7awfJpe8Cz/nqVV2Ubq47UI=
 			</data>
 		</dict>
 		<key>Headers/DPCBankMetadata.h</key>
@@ -1334,6 +1338,17 @@
 			yNpgHyNoiAgqCbrcAlDO3QkUJapUUzrDQEVpiFZVh9Q=
 			</data>
 		</dict>
+		<key>Headers/DPCBrandDetails.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			j33l0pMPZePYVIm+10bkdNOuVHY=
+			</data>
+			<key>hash2</key>
+			<data>
+			YiRS30g3X9VKl6pq+6dfC+Vba4qzgyt49khrIgfYDrg=
+			</data>
+		</dict>
 		<key>Headers/DPCCard.h</key>
 		<dict>
 			<key>hash</key>
@@ -1360,11 +1375,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			laIrYISbLqeVnbezvjBiqyLmAtM=
+			wXHNQByBW27Hogy2RCDsyGQPbkY=
 			</data>
 			<key>hash2</key>
 			<data>
-			Yj1SORTTj05bxeYwFdiiJR8yHlmLrQVt+5fabUSxsBI=
+			LI7SZ3C/daV0zU+Lhnq14afRrX81+z+eS+H61tnS2h4=
 			</data>
 		</dict>
 		<key>Headers/DPCConnect.h</key>
@@ -1459,11 +1474,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7GMx3X0tKin7RwbT2Zw7Ea+m/+I=
+			aHmmxrfeyLKop9+gOSHxgkYMTvk=
 			</data>
 			<key>hash2</key>
 			<data>
-			LeRZ3BdQ6OYsigvASlMYHI4WLG25sEe3RrXu6pStjdE=
+			V7Z92SUeqeP5JgYsPqWPXq/2iYygMqD3QRGDcRTeDqc=
 			</data>
 		</dict>
 		<key>Headers/DPCTransferBound.h</key>

@@ -31,6 +31,12 @@ typedef void (^TransferBlockWithTransferResult)(DPCAccount *__nullable account,
                                                  NSError *__nullable error,
                                                  DPCTransferResult *__nullable transferResult);
 
+typedef NSString *DPCTransactionsType NS_TYPED_EXTENSIBLE_ENUM;
+
+extern DPCTransactionsType const DPCTransactionsTypeDefault;
+extern DPCTransactionsType const DPCTransactionsTypeCategorized;
+extern DPCTransactionsType const DPCTransactionsTypeEnriched;
+
 @property (nonnull, nonatomic, copy, readonly) NSString *userID;
 @property (nonnull, nonatomic, copy, readonly) NSString *clientUserID;
 @property (nonnull, nonatomic, copy, readonly) NSString *bankID;
@@ -65,6 +71,18 @@ typedef void (^TransferBlockWithTransferResult)(DPCAccount *__nullable account,
                fromDate:(NSDate *)fromDate
                  toDate:(NSDate *)toDate
              completion:(void (^ __nullable)(NSArray<DPCTransaction *> *__nullable transactions, NSError *__nullable error, NSString*__nullable operationID))completion;
+
+- (void)getTransactionsForAccount:(DPCAccount *)account
+                         fromDate:(NSDate *)fromDate
+                           toDate:(NSDate *)toDate
+                        type:(DPCTransactionsType _Nullable)type
+                       completion:(void (^ __nullable)(NSArray<DPCTransaction *> *__nullable transactions, NSError *__nullable error, NSString*__nullable operationID))completion;
+
+- (void)getTransactionsForCard:(DPCCard *)card
+                      fromDate:(NSDate *)fromDate
+                        toDate:(NSDate *)toDate
+                          type:(DPCTransactionsType _Nullable)type
+                    completion:(void (^ __nullable)(NSArray<DPCTransaction *> *__nullable transactions, NSError *__nullable error, NSString*__nullable operationID))completion;
 
 
 - (void)getBeneficiaries:(void (^ __nullable)(NSArray<DPCBankBeneficiary *> *__nullable beneficiaries, NSError *__nullable error, NSString *__nullable operationID))completion;
@@ -173,6 +191,8 @@ completionWithReferenceNumber:(TransferBlockWithReferenceNumber)completionWithRe
                                                     amount:(double)amount
                               completionWithTransferResult:(TransferBlockWithTransferResult)completionWithTransferResult
                                                     remark:(NSString *__nullable)remark;
+
+- (void)presentAccountSelectionWithCompletion:(void (^)(DPCAccount * __nullable account, NSError *__nullable error))completion;
 
 - (void)delete:(void (^ __nullable)(DPCResult *__nullable result, NSError *__nullable error))completion;
 
