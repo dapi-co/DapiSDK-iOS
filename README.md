@@ -1,6 +1,10 @@
 # DapiConnect iOS SDK
 ![CocoaPods Compatible](https://img.shields.io/cocoapods/v/DapiSDK)
 
+> **Warning**
+>  You are viewing the outdated documentation for DapiSDK. For a new integration, please [refer to our new Dapi Banking SDK for iOS](https://docs.dapi.com/docs/ios-sdk-installation)
+
+
 ## Overview
 
 ### Introduction
